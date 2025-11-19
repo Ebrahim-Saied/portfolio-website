@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ibrahim Saied - Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: #333; }
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 100px 20px; text-align: center; }
+        header h1 { font-size: 3em; margin-bottom: 10px; }
+        header p { font-size: 1.2em; opacity: 0.9; }
+        nav { background: #333; padding: 1em; text-align: center; position: sticky; top: 0; }
+        nav a { color: white; margin: 0 20px; text-decoration: none; transition: color 0.3s; }
+        nav a:hover { color: #667eea; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 40px 20px; }
+        .section { margin: 40px 0; }
+        .section h2 { font-size: 2em; margin-bottom: 20px; color: #667eea; }
+        .projects { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+        .project-card { background: #f4f4f4; padding: 20px; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); transition: transform 0.3s; }
+        .project-card:hover { transform: translateY(-5px); }
+        .project-card h3 { color: #667eea; margin-bottom: 10px; }
+        .skills { display: flex; flex-wrap: wrap; gap: 10px; }
+        .skill-tag { background: #667eea; color: white; padding: 8px 16px; border-radius: 20px; font-size: 0.9em; }
+        footer { background: #333; color: white; text-align: center; padding: 20px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Ibrahim Saied</h1>
+        <p>Full Stack Developer | IT Support Specialist | CCNA Certified</p>
+    </header>
+    
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    
+    <div class="container">
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>Passionate full-stack developer with expertise in web development, network administration, and IT infrastructure. CCNA certified with hands-on experience in Cisco technologies and networking protocols.</p>
+        </section>
+        
+        <section class="section" id="projects">
+            <h2>Featured Projects</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Weather App</h3>
+                    <p>React-based weather application with real-time data using OpenWeather API. Features city search and forecasts.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Todo API</h3>
+                    <p>RESTful API built with Node.js and Express for managing todo tasks. Includes CRUD operations and filtering.</p>
+                </div>
+                <div class="project-card">
+                    <h3>Network Tools</h3>
+                    <p>Python networking utilities for system administration and network monitoring. Provides connectivity diagnostics.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <div class="skills">
+                <span class="skill-tag">React</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Express</span>
+                <span class="skill-tag">CCNA</span>
+                <span class="skill-tag">Cisco</span>
+                <span class="skill-tag">Network Admin</span>
+                <span class="skill-tag">System Admin</span>
+            </div>
+        </section>
+        
+        <section class="section" id="contact">
+            <h2>Get In Touch</h2>
+            <p>Feel free to reach out for collaborations or inquiries at your email.</p>
+        </section>
+    </div>
+    
+    <footer>
+        <p>&copy; 2025 Ibrahim Saied. All rights reserved.</p>
+    </footer>
+</body>
+</html>
